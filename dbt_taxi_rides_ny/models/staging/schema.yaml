@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: staging
+    database: terraform-demo-439718
+    schema: trips_data_all
+
+    tables:
+      - name: green_trip
+      - name: yellow_trip
