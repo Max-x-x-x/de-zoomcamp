@@ -8,8 +8,8 @@ select
     {{ dbt.safe_cast("DOlocationID", api.Column.translate_type("integer")) }}
     as dropoff_locationid,
 
-    cast("pickup_datetime" as timestamp) as pickup_datetime,
-    cast("dropoff_datetime" as timestamp) as dropoff_datetime,
+    cast(pickup_datetime as timestamp) as pickup_datetime,
+    cast(dropoff_datetime as timestamp) as dropoff_datetime,
 
     {{ dbt.safe_cast("SR_Flag", api.Column.translate_type("integer")) }} as sr_flag
 
